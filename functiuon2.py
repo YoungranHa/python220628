@@ -12,6 +12,6 @@ def intersect(prelist, postlist):
     for x in prelist:
         if x in postlist and x not in result:
             result.append(x)
-        return result
+    return result
 
 print(intersect("HAM","SPAM"))
