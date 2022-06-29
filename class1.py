@@ -6,10 +6,11 @@ class Person:
         self.name="default name"
 
     def print(self):
-        print("My name is{0}".format(self.name))
+        print("My name is {0} ".format(self.name))
 
 #2. 인스턴스 생성
 p1=Person()
 
+p1.name='전우치'
 #3.메서드 호출
 p1.print()
