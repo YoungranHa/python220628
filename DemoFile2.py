@@ -12,7 +12,17 @@ print(f.read())
 print(f.tell())
 f.seek(0)
 result=f.readline()
-print(result)
+for item in result:
+    print(item, end="")
 
+f.seek(0)
+print(f.readline())
+print(f.readline())
 f.close()
  
+
+ #기존에 파일이 있으면 첨부하기
+
+f=open('c:\\work\\demo.txt','wt')
+f.write('새로운 데이터 추가\n')
+f.close()
